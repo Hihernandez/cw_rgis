@@ -65,7 +65,8 @@ mtcars_mpg_by_gear <- df_mtcars %>%
   group_by(gear) %>%
   summarize(
     min_mpg = min(mpg),
-  )
+    max_mpg = max(mpg))
+
 # ggplot ------------------------------------------------------------------
 
 # Visualization in R (using `iris` dataset)
